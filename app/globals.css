@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts */
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-space-mono);
+
+  /* Ēko color palette */
+  --color-background: #f5f4f1;
+  --color-surface: #ffffff;
+  --color-surface-2: #f9f8f6;
+  --color-border: #dddbd6;
+  --color-border-2: #c8c5be;
+
+  --color-ink: #111110;
+  --color-ink-2: #3a3935;
+  --color-ink-3: #7a7870;
+  --color-ink-4: #b0aea8;
+
+  /* Data state colors only — not decorative */
+  --color-green: #1d7a4f;
+  --color-green-light: rgba(29, 122, 79, 0.08);
+  --color-amber: #8a6a00;
+  --color-amber-light: rgba(138, 106, 0, 0.08);
+  --color-red: #b43c3c;
+  --color-red-light: rgba(180, 60, 60, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f4f1;
+  color: #111110;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
